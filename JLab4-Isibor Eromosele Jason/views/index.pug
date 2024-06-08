@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title Movie List
+    link(rel='stylesheet', href='/styles.css')
+  body
+    .container
+      h1 Movie List
+      ul
+        each movie in movies
+          li
+            .movie-title= movie.title
+            .movie-details Year: #{movie.year}, Rating: #{movie.rating}
